@@ -24,4 +24,4 @@ o	Separate clusters of logic control the Red, Yellow, and Green lights for each 
 o	Set the clock frequency and manage intensity for the led and rest of circuit.
 
 
-
+![image alt](https://github.com/aya175/4-Way-Traffic-Light-System-/blob/a688ff8844da92662944ea4639dd0f46177c1c36/test.png)
