@@ -23,5 +23,38 @@ o	Separate clusters of logic control the Red, Yellow, and Green lights for each 
 7.	Resistors & Capacitors: 
 o	Set the clock frequency and manage intensity for the led and rest of circuit.
 
+How it works:
+
+1.  Clock Generation: 
+o	The 555 Timer generates a continuous clock signal in astable mode.
+o	The clock signal is fed into the counter and the 7476 flip-flops.
+2.  Decade Counter Operation:
+•	The counter has 10 outputs (Q0 to Q9), which activate sequentially as the clock pulses are received.
+•	For the traffic light system:
+o	Specific outputs can represent the states of the lights for North-South or East-West directions.
+o	The remaining outputs may be unused or reset the counter after a full cycle.
+3. Flip Flops: 
+o	The 7476 JK flip-flops play a critical role in the system by managing the directional toggling between North-South and East-West signals.
+4.  Logic Decoding:
+•	The outputs of the counter and the flip-flops are combined using logic gates to determine the active LEDs.
+•	For example:
+o	When Q0 is active, the logic gates ensure that:
+	North-South: Green.
+	East-West: Red.
+o	When Q1 is active:
+	North-South: Yellow.
+	East-West: Red.
+o	The flip-flops ensure that after Q3, the sequence switches to East-West green, yellow, and red.
+LED Outputs
+•	Each set of LEDs (red, yellow, green) represents the traffic light signals for one direction.
+•	Resistors limit the current to prevent damage to the LEDs.
+5.  Traffic Light Outputs:
+•	LEDs (or physical traffic lights) are connected to the outputs of the logic gates.
+•	These outputs correspond to the lights being ON/OFF for North-South and East-West directions in a specific sequence.
+
+
+Simulation:
+
+
 
 ![image alt](https://github.com/aya175/4-Way-Traffic-Light-System-/blob/a688ff8844da92662944ea4639dd0f46177c1c36/test.png)
