@@ -1,5 +1,6 @@
 # 4-Way-Traffic-Light-System
-control system for an The objective of this project is to design and implement a 4-way traffic light intersection using digital logic components.
+The objective of this project is to design and implement a 4-way traffic lightcontrol system for an The objective
+of this project is to design and implement a 4-way traffic light intersection using digital logic components.
 The system uses a counter (7490), 7476 JK flip-flops, a 555 Timer, and a combination of logic gates (AND, OR, NOT).
 This setup ensures smooth and accurate sequencing of green, yellow, and red lights for both North-South and East-West directions
 
